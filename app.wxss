@@ -1,0 +1,53 @@
+/**app.wxss**/
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} */
+page{
+  width:100%;
+  height: 100%;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  background: #f2f2f2;
+}
+/*顶部导航*/
+.nav_container{
+    width: 40%;
+    height: 80rpx;
+    background:#ff7500;
+    margin: 20rpx auto;
+    border-radius: 10rpx;
+}
+.nav_container navigator{
+    width: 49%;
+    box-sizing: border-box;
+    background: #ff7500;
+    height: 76rpx;
+    margin-top:2rpx;
+    margin-left: 2rpx;
+    display: inline-block;
+    /*border-radius: 8rpx; */
+    text-align: center;
+    line-height: 76rpx;
+    color: #fff;
+    font-size: 30rpx;
+}
+.nav_container .nav_active_r{
+    background: #fff;
+    border-top-right-radius: 8rpx;
+    border-bottom-right-radius: 8rpx; 
+    color: #ff7500;
+}
+.nav_container .nav_active_l{
+    background: #fff;
+    border-top-left-radius: 8rp;
+    border-bottom-left-radius: 8rpx; 
+    color: #ff7500;
+}

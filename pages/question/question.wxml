@@ -1,0 +1,25 @@
+<scroll-view class="container" scroll-y="true" upper-threshold="50" lower-threshold="50">
+    <view class="nav_container">
+        <navigator>提问</navigator>
+        <navigator class="nav_active_r">我的问题</navigator>
+    </view>
+    <view class="classify" bindtap="selectype">问题设计的税种 <icon type="cancel" size="17" color="gray" /></view>
+    <view class="classify_text">
+        <span wx:for="{{selectedtype}}"> {{item.typename}} </span>
+    </view>
+    <view class="textinput">
+        <textarea wx:if="{{!select_show}}" id="{{select_show}}" maxlength="200" placeholder-class="placeholder" placeholder="最多不能超过200个字符" />
+    </view>
+    <button class="submit_btn">提交</button>
+</scroll-view>
+<view class="select_classify {{select_show ? 'select_show' : ''}}">
+    <p>税种</p>
+    <view>
+        <span bindtap="selected" wx:for="{{type}}" data-id="{{index}}" class="{{item.typeactive ? 'type_active' : ''}}">{{item.typename}}</span>
+    </view>
+    <view class="type_container">
+        <span wx:for="{{selectedtype}}" bindtap="selected" data-id="{{item.id_ed}}" class="type_active">{{item.typename}}</span>
+
+        <button bindtap="selectype">确定</button>
+    </view>
+</view>

@@ -1,0 +1,52 @@
+.user_container{
+    height: 400rpx;
+    background: #fff;
+    text-align: center;
+    font-size:32rpx;
+    color: #808080;
+    font-weight: 700; 
+}
+.user_container image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    background: #ddd;
+    margin-top:20rpx; 
+}
+.user_container p{
+    display: block;
+    text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+.user_container .title{
+    color: #ff7500;
+    font-weight: normal;
+}
+.questionnum{
+    font-size: 60rpx;
+}
+.name{
+    font-size: 40rpx;
+}
+.centernav{
+    height: 100rpx;
+    background: #fff;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+.centernav_container .centernav:first-child{
+    margin-top:30rpx;
+}
+.centernav image{
+    width: 38rpx;
+    height: 38rpx;
+    vertical-align:-3rpx;
+    margin: 0 20px;
+}
+.centernav image:last-child{
+    float: right;
+    line-height: 100rpx;
+    margin-top:30rpx; 
+}

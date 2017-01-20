@@ -1,0 +1,56 @@
+.index_title{
+    width:40%;
+    height: 80rpx;
+    color:#ff7500;
+    background: #fff;
+    font-size: 32rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    margin: 20rpx auto;
+}
+.question_item{
+    width: 100%;
+    box-sizing: border-box;
+    background:#fff;
+    font-size:30rpx; 
+    color: #333;
+    line-height: 1.2;
+    padding: 15rpx;
+    border-radius: 15rpx;
+    margin-bottom:10rpx; 
+}
+.question_item p{
+    width: 100%;
+    max-height: 100rpx;
+    overflow: hidden
+}
+.quetion_type,.anwser_type{
+    color: #ccc;
+    margin:15rpx 0 10rpx;
+    font-size: 26rpx;
+}
+.quetion_image{
+    height: 80rpx;
+    position: relative;
+}
+.quetion_image image{
+    width: 80rpx;
+    height:80rpx;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.quetion_image navigator{
+    width: 50%;
+    height: 80rpx;
+    background:#ff7500;
+    border-radius: 15rpx;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 32rpx;
+    line-height: 80rpx;
+    text-align: center;
+}

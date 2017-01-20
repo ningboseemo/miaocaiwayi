@@ -1,0 +1,14 @@
+<scroll-view class="container" scroll-y="true" upper-threshold="50" lower-threshold="50" bindscrolltolower="lower">
+    <view class="index_title">每日问题精选</view>
+    <view class="question_container">
+        <view class="question_item" wx:for="{{feed}}">
+            <p>{{item.question}}</p>
+            <view class="quetion_type">{{item.question_type}}</view>
+            <view class="quetion_image">
+                <image src="{{item.answer_photo}}"></image>
+                <navigator url="../logs/logs">查看答案</navigator>
+            </view>
+            <view class="anwser_type">{{item.answer}}|{{item.answer_name}}</view>
+        </view>
+    </view>
+</scroll-view>

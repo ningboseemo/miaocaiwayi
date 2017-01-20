@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="user_container">
+        <image src="{{userinfo.avatarUrl}}"></image>
+        <p class="name">{{userinfo.nickName}}</p>
+        <p class="questionnum">1</p>
+        <p class="title">提问次数</p>
+    </view>
+    <view class="centernav_container">
+        <view class="centernav">
+            <image src="../../images/icon1.png"></image>
+            <span>我学习的问题</span>
+            <image src="../../images/icon6.png"></image>
+        </view>
+        <view class="centernav">
+            <image src="../../images/icon2.png"></image>
+            <span>我提问的问题</span>
+            <image src="../../images/icon6.png"></image>
+        </view>
+        <view class="centernav" style="margin-top:30rpx;">
+            <image src="../../images/icon3.png"></image>
+            <span>如何使用答疑</span>
+            <image src="../../images/icon6.png"></image>
+        </view>
+        <view class="centernav">
+            <image src="../../images/icon4.png"></image>
+            <span>如何成为专家</span>
+            <image src="../../images/icon6.png"></image>
+        </view>
+        <view class="centernav">
+            <image src="../../images/icon5.png"></image>
+            <span>用户协议</span>
+            <image src="../../images/icon6.png"></image>
+        </view>
+    </view>
+</view>

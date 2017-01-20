@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/people/people",
+    "pages/question/question",
+    "pages/mycenter/mycenter",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor":"#f2f2f2",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "瞄财答疑",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+    "color":"#333",
+    "selectedColor":"#ff7500",
+    "backgroundColor":"#fafafa",
+    "borderStyle":"light",
+    "list":[
+      {
+        "text":"精选",
+        "pagePath":"pages/index/index",
+        "iconPath":"images/icon.jpg",
+        "selectedIconPath":"images/icon.jpg"
+      },
+      {
+        "text":"找人",
+        "pagePath":"pages/people/people",
+        "iconPath":"images/icon.jpg",
+        "selectedIconPath":"images/icon.jpg"
+      },
+      {
+        "text":"提问",
+        "pagePath":"pages/question/question",
+        "iconPath":"images/icon.jpg",
+        "selectedIconPath":"images/icon.jpg"
+      },
+      {
+        "text":"我的",
+        "pagePath":"pages/mycenter/mycenter",
+        "iconPath":"images/icon.jpg",
+        "selectedIconPath":"images/icon.jpg"
+      }
+    ],
+    "position":"bottom"
+  },
+   "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

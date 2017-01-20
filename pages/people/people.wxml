@@ -1,0 +1,50 @@
+<scroll-view class="container" scroll-y="true" upper-threshold="50" lower-threshold="50">
+    <view class="nav_container">
+        <navigator>专家</navigator>
+        <navigator class="nav_active_r">收藏</navigator>
+    </view>
+    <view class="search_btn" bindtap="searchshow">
+        <icon type="search" size="15" color="gray" />
+        搜索靠谱专家
+    </view>
+    <view class="tuijian">
+        <p>税务专家推荐</p>
+        <view class="tuijian_item" wx:for="{{peopletuijian}}">
+            <image class="photo" src="{{item.people_photo}}"></image>
+            <span>{{item.people_name}}</span>
+            <view bindtap="gztoggle" data-id="{{item.people_id}}" wx:if="{{item.people_collect}}" class="collect">
+                <image src="../../images/guanzhuicon.png"></image>
+                <span>收藏</span>
+            </view>
+            <view bindtap="gztoggle" data-id="{{item.people_id}}" wx:else class="collect">
+                <image src="../../images/weigzicon.png"></image>
+                <span>已收藏</span>
+            </view>
+        </view>
+        <view class="tuijian_item"></view>
+        <view class="tuijian_item"></view>
+        <view class="tuijian_item"></view>
+    </view>
+    <view class="people_item" wx:for="{{people}}">
+        <image src="{{item.people_photo}}"></image>
+        <view class="people_title">
+            <p>{{item.people_name}}</p>
+            <span>{{item.people}}</span>
+        </view>
+        <view bindtap="pptoggle" data-id="{{item.people_id}}" wx:if="{{item.people_collect}}" class="people_collect">
+            <image src="../../images/guanzhuicon.png"></image>
+            <span>收藏</span>
+        </view>
+        <view bindtap="pptoggle" data-id="{{item.people_id}}" wx:else class="people_collect">
+            <image src="../../images/weigzicon.png"></image>
+            <span>已收藏</span>
+        </view>
+    </view>
+</scroll-view>
+<view class="search_container" hidden="{{search}}">
+    <view class="search_bar">
+        <icon bindtap="searchhide" type="cancel" size="16" color="gray"/>
+        <input type="text" />
+        <button bindtap="searchhide">确定</button>
+    </view>
+</view>
